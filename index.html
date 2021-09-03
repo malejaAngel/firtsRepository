@@ -9,6 +9,10 @@
 <body>
     <!--aqui vamos actualizar un logo y un menu -->
      <header>
+         <!--crear logo -->
+         
+         <img src="img/logo.png"/> <h1><center>CLUB DE LECTORES</center></h1>
+
          <!--declarar el menu en forma de lista -->
         <nave>
             <!--crear lista -->
@@ -24,37 +28,77 @@
 
       <main>
 
-        <ul>
-            <!--crear itens a la lista -->
-         <center><h1> Ejemplo lista 1 </h1></center> <!--El center es para centrar el texto   -->
-         <li>lista 1</li>
-         <br/>  <!--El br es para dar espacio o para un salto de linea  -->
-         <li>lista 2</li>
-         <br/>
-         <li>lista 3 </li>
-         <br/>
+       <center>
+           <h1>Formulario</h1>
+           <br />
+           <form>
+               <!--crear formulario-->
+           <label for="nombre">Nombre:</label>
+           <input type="text"id="nombre" name="txtnombre" placeholder="Ingresar nombre">
+           <br /><br /> 
 
-        </ul>
+           <label>Edad</label>
+           <input type="number"name="txtedad" min=18 max=120 size=40>
+           <br /><br />
 
+           <label>Fecha de nacimiento</label>
+           <input type="date"name="txtfecha">
+           <br /><br />
 
-        <ul>
-            <!--crear itens a la lista -->
-         <h1> Ejemplo lista 2 </h1> <!--El center es para centrar el texto   -->
-         <li>lista 1</li>
-         <li>lista 2</li>
-         <li><b>lista 3</b> </li><!--Negrita se puede con "b" o con "strong"   -->
+           <label>Correo electronico</label>
+           <input type="email"name="txtcorreo">
+           <br /><br /> 
 
-        </ul>
+           <label>Ingresar observaciones:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+           <textarea name="observaciones" rows="3" cols="50"></textarea>
+           <br /><br /> 
 
+           <label>Ingresas genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label>Maculino:</label><input type="radio" name="genero" value="Masculino">
+           <label>Femenino:</label><input type="radio" name="genero" value="Femenino">
+           <br /><br /> 
 
-        <h1> Nicole Kidman</h1>
-        <h2> Peliculas</h2>
-        <h3> * Comedia</h3>
-        <h3> * Terror</h3>
-        <h3> * Drama</h3>
-    </main>
+           <input type="submit"value="Grabar">&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="submit"value="Cancelar">
 
-    <footer>
+           </form>
+
+           <!--crear tabla-->
+           <br /> 
+           <h2>LISTADO TEMAS Y HORARIOS</h2>
+           <table border=1>
+
+                <tr>
+               <th>Lunes</th>
+               <th>Martes</th>
+               <th>Miercoles</th>
+               <th>Jueves</th>
+               <th>Viernes</th>
+               </tr>
+
+                <tr>
+                <td>Fisica</td>
+                <td>2:00 pm</td>
+                <td>8:00 am</td>
+                <td>2:00 pm</td>
+                <td>8:00 am</td>
+                </tr>
+
+                <tr>
+                <td>Literatura</td>
+                <td>4:00 pm</td>
+                <td>9:00 am</td>
+                <td>4:00 pm</td>
+                <td>9:00 am</td>
+                </tr>
+
+           </table>
+
+       </center>
+       <br /><br /> 
+      </main>
+
+    <footer>  
      curso HTML
     </footer>  
     
