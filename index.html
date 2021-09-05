@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento de prueba</title>
+    <link rel="stylesheet" href="css/estiloG14.css">
+    <style>
+
+    </style>
+
+
 </head>
 <body>
     <!--aqui vamos actualizar un logo y un menu -->
      <header>
          <!--crear logo -->
-         
-         <img src="img/logo.png"/> <h1><center>CLUB DE LECTORES</center></h1>
+         <a href="socios.html">
+            <img src="img/logo.png"/ alt="nombre de la empresa"/>
+         </a>
+
+         <h1 style="color:rgb(101, 40, 180);"><center>CLUB DE LECTORES</center></h1>
 
          <!--declarar el menu en forma de lista -->
         <nave>
@@ -33,7 +42,7 @@
            <br />
            <form>
                <!--crear formulario-->
-           <label for="nombre">Nombre:</label>
+           <label for="nombre" style="color:blueviolet">Nombre:</label>
            <input type="text"id="nombre" name="txtnombre" placeholder="Ingresar nombre">
            <br /><br /> 
 
@@ -49,14 +58,32 @@
            <input type="email"name="txtcorreo">
            <br /><br /> 
 
+           <label>Tipo de documento: </label>
+           <!--crear lista desplegable  de docuemntos para la selección -->
+           <select name="tipo_documento">
+               <option value="" selected="true">Seleccionar</option>
+               <option value="CC">Cedula de ciudadania</option>
+               <option value="TI">Tarjeta de identidad</option>
+               <option value="CE">Cedula de extranjeria</option>
+           </select>
+           <br /><br /> 
+
            <label>Ingresar observaciones:</label>&nbsp;&nbsp;&nbsp;&nbsp;
            <textarea name="observaciones" rows="3" cols="50"></textarea>
            <br /><br /> 
 
-           <label>Ingresas genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label>Ingresar genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;
            <label>Maculino:</label><input type="radio" name="genero" value="Masculino">
            <label>Femenino:</label><input type="radio" name="genero" value="Femenino">
            <br /><br /> 
+
+           <label>Ingresar Materias: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label>Matematicas: </label>
+           <input type="checkbox" name="materias" checked>
+           <label>Fisica: </label>
+           <input type="checkbox" name="materias" >
+           <br /><br />
+
 
            <input type="submit"value="Grabar">&nbsp;&nbsp;&nbsp;&nbsp;
            <input type="submit"value="Cancelar">
@@ -69,27 +96,30 @@
            <table border=1>
 
                 <tr>
-               <th>Lunes</th>
-               <th>Martes</th>
-               <th>Miercoles</th>
-               <th>Jueves</th>
-               <th>Viernes</th>
+               <th> Materia </th>
+               <th> Lunes </th>
+               <th> Martes </th>
+               <th> Miercoles </th>
+               <th> Jueves </th>
+               <th> Viernes </th>
                </tr>
 
                 <tr>
-                <td>Fisica</td>
+                <td> Fisica </td>
                 <td>2:00 pm</td>
                 <td>8:00 am</td>
                 <td>2:00 pm</td>
                 <td>8:00 am</td>
+                <td>9:00 am</td>
                 </tr>
 
                 <tr>
-                <td>Literatura</td>
+                <td> Literatura </td>
                 <td>4:00 pm</td>
                 <td>9:00 am</td>
                 <td>4:00 pm</td>
                 <td>9:00 am</td>
+                <td>3:00 am</td>
                 </tr>
 
            </table>
@@ -99,7 +129,14 @@
       </main>
 
     <footer>  
-     curso HTML
+        <div class="estilo_div">
+            <center>
+            <p id="parrafo1">pagina de prueba parrafo 1 </p>
+            <p id="parrafo2">pagina de prueba parrafo 2 </p>
+            <p>pagina de prueba parrafo 1 </p>
+            </center>
+        </div>
+     
     </footer>  
     
 </body>

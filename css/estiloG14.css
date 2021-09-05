@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(241, 244, 247);
+    color: rgb(127, 46, 165)
+}
+h1{
+    color:blueviolet;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 40px;
+}
+div{
+    background-color: palegoldenrod;
+}
+
+
+
+ /* estilo para una etiqueta que existe */
+h1{
+    color: darksalmon;
+   }
+
+ /* primer estilo aplicacndolo para un class*/
+    .estilo_div{
+        position: center;
+        background-color: rgb(56, 11, 56);
+        color: rgb(117, 170, 24);
+    }
+
+ /*  estilo aplicacndolo para un id*/
+    #parrafo1{
+        color:rgb(243, 228, 89);
+    }
+    #parrafo2{
+        color:rgb(0, 4, 255);
+    }
+
