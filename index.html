@@ -7,10 +7,9 @@
     <title>Documento de prueba</title>
     <link rel="stylesheet" href="css/estiloG14.css">
     <script src="https://kit.fontawesome.com/5c12f6cddc.js" crossorigin="anonymous"></script>
-    <style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    </style>
-
+    
 
 </head>
 <body>
@@ -27,10 +26,12 @@
         <nave id="menu">
             <!--crear lista -->
             <ul>
+             
                 <!--crear itens a la lista -->
              <li><a href=" https://www.biblored.gov.co/bibliotecas">libros</a></li>
              <li><a href="index.html"target="_blank">Socios</a></li>
              <li><a href="index.html"target="_blank">autores</a></li>
+             
 
             </ul>
         </nave>    
@@ -44,19 +45,19 @@
            <form class="formulario">
                <!--crear formulario-->
            <label class="diseño_label" for="nombre" style="color:blueviolet">Nombre:</label>
-           <input type="text"id="nombre" name="txtnombre" placeholder="Ingresar nombre">
+           <input class="diseño_input"type="text"id="nombre" name="txtnombre" placeholder="Ingresar nombre">
            <br /><br /> 
 
            <label class="diseño_label">Edad</label>
-           <input type="number"name="txtedad" min=18 max=120 size=40>
+           <input class="diseño_input" type="number"name="txtedad" min=18 max=120 size=40>
            <br /><br />
 
            <label class="diseño_label">Fecha de nacimiento</label>
-           <input type="date"name="txtfecha">
+           <input class="diseño_input" type="date"name="txtfecha">
            <br /><br />
 
            <label class="diseño_label">Correo electronico</label>
-           <input type="email"name="txtcorreo">
+           <input class="diseño_input" type="email"name="txtcorreo">
            <br /><br /> 
 
            <label class="diseño_label">Tipo de documento: </label>
@@ -69,32 +70,32 @@
            </select>
            <br /><br /> 
 
-           <label class="diseño_label">Ingresar observaciones:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label class="diseño_label">Ingresar observaciones:</label>
            <textarea class="diseño_input" name="observaciones" rows="3" cols="50"></textarea>
            <br /><br /> 
 
-           <label class="diseño_label">Ingresar genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-           <label class="diseño_label">Maculino:</label><input type="radio" name="genero" value="Masculino">
-           <label class="diseño_label">Femenino:</label><input type="radio" name="genero" value="Femenino">
+           <label class="diseño_label">Ingresar genero:</label>
+           <label class="diseño_label">Maculino:<input type="radio" name="genero" value="Masculino">
+                                       Femenino:<input type="radio" name="genero" value="Femenino"></label>
            <br /><br /> 
 
-           <label class="diseño_label">Ingresar Materias: </label>&nbsp;&nbsp;&nbsp;&nbsp;
-           <label class="diseño_label">Matematicas: </label>
+           <label class="diseño_label">Ingresar Materias: </label>
+           <label>Matematicas: </label>
            <input type="checkbox" name="materias" checked>
-           <label class="diseño_label">Fisica: </label>
-           <input type="checkbox" name="materias" >
+           <label>Fisica: </label>
+           <input type="checkbox" name="materias" ></label>
            <br /><br />
 
-
-           <input type="submit"value="Grabar">&nbsp;&nbsp;&nbsp;&nbsp;
-           <input type="submit"value="Cancelar">
-
+           <center>
+           <input class="boton_formulario" type="submit"value="Grabar">&nbsp;&nbsp;&nbsp;&nbsp;
+           <input class="boton_formulario" type="submit"value="Cancelar">
+           </center>
            </form>
 
            <!--crear tabla-->
            <br /> 
            <h2>LISTADO TEMAS Y HORARIOS</h2>
-           <table border=1>
+           <table class="estilo_tabla">
 
                 <tr>
                <th> Materia </th>
@@ -220,8 +221,210 @@
             <p>pagina de prueba parrafo 1 </p>
             </center>
         </div>
-    
+        <br /><br />
     </footer>  
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="alinear_logo col-12 col-md-6 col-xl-4">
+                <a href="socios.html">
+                    <img src="img/logo.png"/ alt="nombre de la empresa"/>
+                 </a>
+            </div>
+            <div class="alinear_logo col-12 col-md-6 col-xl-3">
+                <p class="fs-1">CLUB DE LECTORES</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-5">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+    <form class="form-register">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <!--font-weight-bold/form control y form-label son estilos de boostrap -->
+                    <label class="font-weight-bold" for="nombre" style="color:blueviolet">Nombre:</label>
+                    <input class="form-control"type="text"id="nombre" name="txtnombre" 
+                    placeholder="Ingresar nombre">
+                    <br /><br /> 
+                </div>
+                <div class=" col-12 col-md-6">
+                    <label class="form-label">Edad:</label>
+                    <input class="form-control" type="number"name="txtedad" min=18 max=120 size=40>
+                    <br /><br />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <!--font-weight-bold/form control y form-label son estilos de boostrap -->
+                    <label class="form-label">Fecha de nacimiento:</label>
+                    <input class="form-control" type="date"name="txtfecha">
+                    
+                </div>
+                <div class=" col-12 col-md-4">
+                    <label class="form-label">Correo electronico:</label>
+                    <input class="form-control" type="email"name="txtcorreo">
+                </div>
+
+                <div class=" col-12 col-md-4">
+                    <label class="form-label">Tipo de documento: </label>&nbsp;&nbsp;
+                    <select class="form-control" name="tipo_documento">
+                        <option value="" selected="true">Seleccionar</option>
+                        <option value="CC">Cedula de ciudadania</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CE">Cedula de extranjeria</option>
+                    </select>
+                </div>
+                
+            </div>
+            <br /><br />
+            <div class="row">
+                <div class="col-12 col-md-6">            
+                    <button type="button" class="btn btn-info">Guardar</button>
+                </div>
+                <div class="col-12 col-md-6">            
+                    <button type="button" class="btn btn-info">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </form>
     
+    <br /><br />
+
+    <script src="js/primer_java_script.js"></script>
+
+    <br /><br /><br />
+
+    <div class="container">
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table table-primary table-striped table-hover">
+                    <tr>
+                        <th>MATERIA</th>                    
+                        <th>LUNES</th>
+                        <th>MARTES</th>
+                        <th>MIERCOLES</th>
+                        <th>JUEVES</th>
+                        <th>VIERNES</th>
+                    </tr>
+                    <tr>
+                        <td>FISICA</td>
+                        <td></td>
+                        <td>8-10 AM</td>
+                        <td></td>
+                        <td>8-10 AM</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MATEMATICAS</td>
+                        <td></td>
+                        <td class="table-warning">8-10 AM</td>
+                        <td></td>
+                        <td>8-10 AM</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>FISICA</td>
+                        <td></td>
+                        <td>8-10 AM</td>
+                        <td></td>
+                        <td>8-10 AM</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MATEMATICAS</td>
+                        <td></td>
+                        <td class="table-warning">8-10 AM</td>
+                        <td></td>
+                        <td>8-10 AM</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2">
+        <h5>Integrantes</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+    <br /><br /> <br /><br />
+
+    
+
 </body>
 </html>

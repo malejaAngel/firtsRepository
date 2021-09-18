@@ -8,8 +8,6 @@ h1{
     font-size: 40px;
 }
 
-
-
  /* estilo para una etiqueta que existe */
 h1{
     color: darksalmon;
@@ -39,8 +37,7 @@ h1{
     }
 
     .caja_morada{
-        display: flex;
-        
+        display: flex; 
     }
 
     .caja_naranja{
@@ -134,4 +131,111 @@ h1{
 
     .diseño_input{
         display: inline-block;
+        width: 50%;
     }
+
+    .boton_formulario{
+        width: 200px;
+        height: 40px ;
+        background: rgb(144, 240, 240);
+        color:rgb(8, 5, 1); 
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(67, 10, 121);
+    }
+
+    .boton_formulario:hover{
+        background-color: orange;
+        cursor:pointer;
+    }
+
+    .estilo_tabla{
+        width: 90%;
+        border-collapse: collapse;
+        border: 0.3px solid black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+    }
+
+    th, td{
+        border: 0.3px solid black;
+    }
+
+    th{
+        background-color: rgb(243, 156, 243);
+    }
+    .color1{
+        background-color: blueviolet;
+    }
+
+    .color2{
+        background-color: cornflowerblue;
+    }
+
+    .color3{
+        background-color: khaki;
+    }
+    .alinear_logo{
+        text-align: center;
+    }
+
+    .btn{
+        width: 190px;
+    }
+
+    /*si el tamañomaximo del dispositivo es 640xp entonces:*/
+    @media(max-width: 640px){
+
+        header{
+            text-align: center;
+            
+        }
+
+        #menu ul{
+           flex-direction: column;
+           align-items: center;
+        }
+
+        #menu li a{
+            width: 300px;
+            height: 50px;
+            background-color: rgb(235, 189, 41);
+        }
+
+        .formulario{
+            width: 90%;
+            text-align: left;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .boton_formulario{
+            width: 30%;
+            height: 30px;
+        }
+
+        #caja_grande{
+            width: 97%;
+            display:block;/*  sirve para alinear las cajas pequeñas en las caja grande */
+            margin-bottom: 20px;
+        }
+
+    }
+
+   /*Si quiere un diseño para tablets*/
+   @media(min-width: 640px)and(max-width:1280px)
+
+   {
+    .formulario{
+        width: 90%;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #caja_grande{
+        width: 97%;
+        display:block;/*  sirve para alinear las cajas pequeñas en las caja grande */
+        margin-bottom: 20px;
+    }
+
+   }
+
